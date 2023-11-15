@@ -13,4 +13,6 @@ h1 {
   background-color: aquamarine;
   margin: auto;
   text-align: center;
+  font-size: 22px;
+  font-weight: bold;
 }
