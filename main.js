@@ -11,3 +11,21 @@ function onBallClick(el, maxDiameter) {
   el.style.backgroundColor = getRandomColor()
   el.innerText = ballSize
 }
+
+function swapColorsAndSizes(el) {
+  const elBall1 = document.querySelector(".ball1")
+  const elBall2 = document.querySelector(".ball2")
+
+  var tempColor = elBall1.style.backgroundColor
+  elBall1.style.backgroundColor = elBall2.style.backgroundColor
+  elBall2.style.backgroundColor = tempColor
+
+  // Swap sizes
+  var tempWidth = elBall1.style.width
+  elBall1.style.width = elBall2.style.width
+  elBall2.style.width = tempWidth
+
+  var tempHeight = elBall1.style.height
+  elBall1.style.height = elBall2.style.height
+  elBall2.style.height = tempHeight
+}
