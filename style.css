@@ -10,7 +10,6 @@ h1 {
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  background-color: aquamarine;
   margin: auto;
   text-align: center;
   font-size: 22px;
@@ -18,14 +17,14 @@ h1 {
   transition: 1s;
 }
 
+.ball1 {
+  background-color: aquamarine;
+}
+
 .ball2 {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  background-color: rgb(196, 202, 200);
-  margin: auto;
-  text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-  transition: 1s;
+  background-color: maroon;
+}
+
+.ball3 {
+  background-color: fuchsia;
 }
