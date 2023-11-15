@@ -56,3 +56,7 @@ function reducesSizes() {
     elBall2.innerText = elBall2.style.width
   }
 }
+
+function changeBgcolor() {
+  document.querySelector("body").style.backgroundColor = getRandomColor()
+}
