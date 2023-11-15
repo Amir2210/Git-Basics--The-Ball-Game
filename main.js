@@ -29,3 +29,30 @@ function swapColorsAndSizes(el) {
   elBall1.style.height = elBall2.style.height
   elBall2.style.height = tempHeight
 }
+
+function reducesSizes() {
+  const elBall1 = document.querySelector(".ball1")
+  const elBall2 = document.querySelector(".ball2")
+  if (ballSize < 100) return
+  var randomSizeBall1 = getRandomInt(20, 60)
+  if (ballSize - randomSizeBall1 < 100) {
+    elBall1.style.width = 100 + "px"
+    elBall1.style.height = 100 + "px"
+    elBall1.innerText = elBall1.style.width
+  } else {
+    elBall1.style.width = ballSize - randomSizeBall1 + "px"
+    elBall1.style.height = ballSize - randomSizeBall1 + "px"
+    elBall1.innerText = elBall1.style.width
+  }
+
+  var randomSizeBall2 = getRandomInt(20, 60)
+  if (ballSize - randomSizeBall2 < 100) {
+    elBall2.style.width = 100 + "px"
+    elBall2.style.height = 100 + "px"
+    elBall2.innerText = elBall2.style.width
+  } else {
+    elBall2.style.width = ballSize - randomSizeBall2 + "px"
+    elBall2.style.height = ballSize - randomSizeBall2 + "px"
+    elBall2.innerText = elBall2.style.width
+  }
+}
